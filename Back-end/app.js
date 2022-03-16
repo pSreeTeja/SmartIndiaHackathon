@@ -73,6 +73,38 @@ const requireAuth = (req, res, next) => {
   }
 };
 
+// ----------------------Functions----------------------
+
+const createToken = (id) => {
+  return jwt.sign({ id }, "philanterfakadi", {
+    expiresIn: 1 * 24 * 60 * 60,
+  });
+};
+
+const handleErrors = (err) => {
+  let errors = {
+    email: "",
+    password: "",
+    name: "",
+  };
+
+  //unique email handle
+  if (err.code === 11000) {
+    errors.email = "This email is already registered";
+    return errors;
+  }
+
+  //validate errors
+  if (err.message.includes("user validation failed")) {
+    Object.values(err.errors).forEach((obj) => {
+      let properties = obj.properties;
+      errors[properties.path] = properties.message;
+    });
+  }
+
+  return errors;
+};
+
 // ----------------------Auth Routes----------------------
 
 app.post("/login", async (req, res) => {
@@ -88,8 +120,7 @@ app.post("/login", async (req, res) => {
       secure: true,
       sameSite: "none",
     });
-    const testsData = user.tests;
-    res.status(200).json({ user: user._id, token, testsData });
+    res.status(200).json({ user: user._id, token });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
@@ -97,8 +128,6 @@ app.post("/login", async (req, res) => {
 
 app.post("/signup", async (req, res) => {
   const { email, password, name } = req.body;
-  const tests = [];
-  const difficulty = "medium";
   const flag = 0;
 
   try {
@@ -106,8 +135,6 @@ app.post("/signup", async (req, res) => {
       email,
       password,
       name,
-      tests,
-      difficulty,
       flag,
     });
     const token = createToken(user._id);
