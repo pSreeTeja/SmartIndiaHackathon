@@ -1,0 +1,58 @@
+.filterBox {
+  /* padding: 15px 20px; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 80%;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.filterBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.filterTitle {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.categoryLabel,
+.locationLabel,
+.startfromLabel,
+.maxdurationLabel {
+  /* margin-bottom: 6px; */
+  font-weight: 500;
+}
+.categoryDiv,
+.locationDiv,
+.startingfromDiv,
+.maxdurationDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.categoryInput,
+.locationInput,
+.startfromInput,
+.maxdurationInput {
+  padding: 5px 10px;
+  margin-bottom: 13px;
+  width: 100%;
+}
+.applyButton {
+  width: 50%;
+  color: white;
+  background-color: #006fb4;
+  padding: 5px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.applyButton:hover {
+  background-color: #038de0;
+}
