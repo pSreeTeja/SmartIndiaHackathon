@@ -1,0 +1,171 @@
+.LBMainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -----------Div1-------------- */
+
+.LBDiv1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 35px;
+}
+
+.LBDiv1Head {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.LBDiv1Body {
+  width: 450px;
+  margin-top: 8px;
+}
+
+.LBDiv1Button {
+  border: 1px solid #0362fc;
+  padding: 6px 18px;
+  background-color: #0362fc;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.LBDiv1Button a {
+  color: white;
+}
+
+.LBDiv1Button:active {
+  transform: translateY(3px);
+}
+
+.LBDiv1Img img {
+  height: 280px;
+}
+
+/* -----------Div2-------------- */
+
+.LBDiv2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 90px;
+  width: 85%;
+}
+
+.LBDiv21 {
+  border: 1px solid #0362fc;
+  background-color: #0362fc;
+  color: white;
+  width: 500px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.LBDiv21Head,
+.LBDiv22Head {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.LBDiv21Body,
+.LBDiv22Body {
+  font-size: 18px;
+}
+
+.LBDiv21Button,
+.LBDiv22Button {
+  border: 1px solid white;
+  padding: 6px 18px;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.LBDiv21Button a,
+.LBDiv22Button a {
+  color: white;
+}
+.LBDiv22 {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  width: 500px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+/* -----------Div3-------------- */
+
+.LBDiv3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  width: 85%;
+}
+
+.LBDivHead {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.LBDiv31,
+.LBDiv32,
+.LBDiv33 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  border: 0.5px solid rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  max-width: 850px;
+}
+
+.LBMoveDiv31,
+.LBMoveDiv33 {
+  width: 85%;
+  display: flex;
+}
+
+.LBMoveDiv32 {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.LBDiv311Head,
+.LBDiv321Head,
+.LBDiv331Head {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.LBDiv311Body,
+.LBDiv321Body,
+.LBDiv331Body {
+  font-size: 18px;
+  width: 90%;
+  margin-top: 12px;
+}
+
+.LBDiv312 img,
+.LBDiv322 img,
+.LBDiv332 img {
+  height: 150px;
+}
+
+.LBDivEnd {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 35px;
+}
