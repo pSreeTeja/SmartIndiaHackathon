@@ -1,0 +1,133 @@
+.homeMainDiv {
+  display: flex;
+  flex-direction: row;
+}
+.firstDiv {
+  width: 6%;
+  background-color: #1f273a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.profilePic {
+  height: 64px;
+  margin-bottom: 25%;
+}
+.secondDiv {
+  width: 18%;
+  background-color: #2b314b;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titleDiv {
+  display: flex;
+  height: fit-content;
+}
+.Title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  margin-top: 3%;
+  margin-left: 12%;
+}
+.sectionsDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 12%;
+  align-items: flex-start;
+  color: white;
+  font-size: 20px;
+  margin-top: 16%;
+}
+.sectionsDiv span {
+  margin-top: 12%;
+  cursor: pointer;
+}
+.sectionActive {
+  font-weight: bold;
+}
+.buttonDiv {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.createButton {
+  width: 80%;
+  margin: 0;
+  color: white;
+  padding: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #006fb4;
+  border: 0;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 12%;
+}
+.createButton:hover {
+  background-color: #038de0;
+}
+.thirdDiv {
+  display: flex;
+  flex-direction: column;
+  width: 76%;
+}
+.topBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  height: 10%;
+  border-bottom: 0.5px solid #dad7d7;
+}
+.selectTag {
+  margin-left: 2%;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.searchDiv {
+  display: flex;
+  margin-left: 20%;
+  align-items: center;
+}
+.searchIcon {
+  margin-right: 10px;
+  height: 25px;
+  cursor: pointer;
+}
+.searchInput {
+  font-size: 18px;
+  color: black;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  outline: none;
+}
+.bottomDiv {
+  height: 90%;
+  /* background-color: red; */
+  display: flex;
+}
+.listDiv {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 1%;
+}
+.filterDiv {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  box-sizing: border-box;
+  padding: 1%;
+}

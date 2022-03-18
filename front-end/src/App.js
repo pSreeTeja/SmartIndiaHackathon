@@ -3,6 +3,7 @@ import LandingPage from "./Containers/LandingPage";
 import "./App.css";
 import SignupPage from "./Containers/SignupPage";
 import LoginPage from "./Containers/LoginPage";
+import Home from "./Containers/Home";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route exact path="/home" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>

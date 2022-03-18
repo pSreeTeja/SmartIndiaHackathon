@@ -1,0 +1,45 @@
+.eachRowMainDiv {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 3px;
+  margin: 15px;
+}
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: flex-start;
+  /* background-color: red; */
+}
+.rightDiv {
+  width: 20%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  font-weight: bold;
+  font-size: 24px;
+}
+.companyName {
+  color: rgb(65, 65, 65);
+}
+.visitButton {
+  width: 80%;
+  color: white;
+  background-color: #006fb4;
+  padding: 8px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.visitButton:hover {
+  background-color: #038de0;
+}
