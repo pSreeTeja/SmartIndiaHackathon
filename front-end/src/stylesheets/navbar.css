@@ -1,0 +1,49 @@
+.NMainDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  box-shadow: 0 4px 6px -5px rgb(50 50 93 / 25%),
+    0 4px 3px -5px rgb(0 0 0 / 30%);
+}
+
+.NButtonsDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.NButton {
+  margin: 0px 20px;
+  border: 1px solid black;
+  padding: 6px 18px;
+}
+
+.Active {
+  background-color: black;
+}
+
+.Active a {
+  color: white;
+}
+
+.NButton:active {
+  transform: translateY(3px);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.NLogo {
+  color: #0362fc;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.NX {
+  font-size: 35px;
+}
